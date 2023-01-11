@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(121, 84, 20);
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(0, 0, 0);
+  background-image: url(/Assets/nice.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+  background-color: #ac9d82ca;
+  color: rgb(241, 228, 209);
+  border: 2px solid #a39475e0;
+  border-radius: 5px;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+button:hover {
+  background-color: rgba(130, 109, 70, 0.883);
+  border: 2px solid rgba(143, 116, 65, 0.814);
+  border-radius: 5px;
+}
+button:hover > i {
+  color: rgb(228, 226, 226);
+}
+button i {
+  color: rgba(248, 245, 241, 0.814);
+  font-weight: bold;
+  pointer-events: none;
+}
+input,
+select {
+  padding: 0.25rem 0.5rem;
+}
+.hide {
+  display: none;
+}
+/* To Do Header */
+.todo-container {
+  max-width: 500px;
+  margin: 6rem auto 0;
+  background-color: rgba(214, 194, 166, 0.943);
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+.todo-container header {
+  text-align: center;
+  padding: 0 1rem 1rem;
+  border-bottom: 1px solid rgb(188, 135, 0);
+}
+/* To do form */
+#todo-form,
+#edit-form {
+  padding: 1rem;
+  border-bottom: 1px solid rgb(188, 135, 0);
+}
+#todo-form p,
+#edit-form p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.form-control {
+  display: flex;
+}
+.form-control input {
+  margin-right: 0.3rem;
+}
+#cancel-edit-btn {
+  margin-top: 0.3rem;
+}
+/* To do toolbar */
+#toolbar {
+  padding: 1rem;
+  border-radius: 1px solid rgb(188, 135, 0);
+  display: flex;
+}
+#toolbar h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+#search {
+  border-right: 1px solid rgb(188, 135, 0);
+  padding-right: 1rem;
+  margin-right: 1rem;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+#search form {
+  display: flex;
+}
+#search input {
+  width: 100%;
+  margin-right: 0.3rem;
+}
+#filter {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+#filter select {
+  flex: 1;
+}
+/* To do List  */
+.todo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid rgb(188, 135, 0);
+  transition: 0.3s;
+}
+.todo h3 {
+  flex: 1;
+  font-size: 1rem;
+}
+.todo button {
+  margin-left: 0.4rem;
+}
+.done {
+  border: 1px transparent;
+  border-radius: 5px;
+  background-color: rgb(183, 129, 53);
+}
+.done h3 {
+  color: rgb(82, 47, 2);
+  text-decoration: line-through;
+  font-style: italic;
+}
